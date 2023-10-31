@@ -1,0 +1,295 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* variable declare */
+:root{
+    --black: #000;
+    --color1: #468494;
+    --color2: #a4ece4;
+    --color3: #173d4e;
+    --color4: #68a4ac;
+    --color5: #8eccc4;
+}
+
+/* Estilos generales */
+*, ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: var(--color4);
+}
+
+.seccion-clara{
+    color: black;
+    background-color: white;
+}
+
+.seccion-gris{
+    color: black;
+    background: #f5f5f5; 
+}
+
+/* Barra de navegacion */
+nav{
+    width: 100%;
+    /* padding: 22px 0; */
+}
+
+.nav-item{
+    margin: 0 12px;
+    position: relative;
+}
+
+.nav-link{
+    font-size: 15px;
+    /* text-transform: capitalize; */
+}
+
+.nav-link:hover{
+    color: var(--color3)!important;
+    font-weight: bold;
+}
+
+.dropdown-item{
+    color: var(--color3);
+}
+
+.dropdown-item:hover{
+    color: var(--color4)!important;
+    font-weight: bold;
+}
+.nav-btns i{
+    /* color: var(--black); */
+    font-size: 19px;
+}
+
+#search-form button{
+    background-color: var(--color3);
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0;
+}
+
+#search-form button:hover{
+    background-color: #1d5068;
+}
+
+#search-form input{
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+}
+
+/* Seccion cuenta */
+.cuenta .container{
+    padding: 104px 0 80px 0;
+}
+
+.cuenta .container h2{
+    /* font-size: 38px; */
+    color: var(--color4);
+    font-weight: bold;
+}
+
+.user i{
+    color: var(--color4);
+    margin: 10px 0 0 20px;
+    font-size: 40px;
+}
+
+.formulario .container h2 {
+    font-size: 2em;
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: var(--color4);
+}
+.formulario .container p {
+    margin: 0 0 -5px;
+}
+
+.cuenta .tab-content{
+    margin-top: 10px;
+}
+.cuenta .form-label, .cuenta h6{
+    font-weight: bold;
+    color: var(--color4);
+    font-size: 18px;
+}
+.cuenta .form-label{
+    margin-top: 10px;
+}
+.cuenta h6{
+    margin: 10px 0 18px 0;
+}
+.cuenta .alert{
+    margin: 0;
+}
+.cuenta .btn{
+    padding: 0;
+}
+.cuenta .btn .btn-actualizar, .cuenta .btn .btn-borrar{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+
+}
+
+.cuenta .btn .btn-actualizar{
+    background-image: linear-gradient(16deg, var(--color1) 0%, var(--color4) 54%, var(--color5) 100%);
+    margin-top: 20px;
+}
+
+.cuenta .btn .btn-actualizar:hover{
+    background-image: linear-gradient(16deg, var(--color1) 0%, var(--color4) 34%, var(--color5) 100%);
+    cursor:pointer;
+}
+
+.cuenta .btn .btn-borrar{
+    background-image: linear-gradient(16deg, #aa231f 0%, #c7231d 54%, #ec371f 100%);
+}
+
+.cuenta .btn .btn-borrar:hover{
+    background-image: linear-gradient(16deg, #aa231f 0%, #c7231d 34%, #ec371f 100%);
+    cursor:pointer;
+}
+
+.cuenta .btn-perfil{
+    margin-top: 20px;
+    width: 300px;
+}
+
+.alerta{
+    text-align: center;
+    color: red;
+}
+
+.success{
+    text-align: center;
+    color: rgb(33, 129, 30);
+}
+
+.cuenta {
+    background: #f5f5f5;
+    margin-top: 20px;
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.card {
+    background-clip: padding-box;
+    box-shadow     : 0 1px 4px rgba(24, 28, 33, 0.012);
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position  : absolute;
+    visibility: hidden;
+    width     : 1px;
+    height    : 1px;
+    opacity   : 0;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important;
+}
+
+.account-settings-multiselect~.select2-container {
+    width: 100% !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.material-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.material-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.dark-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4E5155 !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+/*Inicio pie de pagina*/
+footer {
+    font-size: 12px;
+    text-align: center;
+    background-color: #173d4e; 
+    color: #fff; 
+    padding: 10px; 
+}
+
+.useful-links{
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.useful-links li {
+    margin-bottom: 10px; 
+}
+ul {
+    list-style: none; 
+}
+
+.useful-links a {
+    text-decoration: none; 
+    color: white; 
+}
+
+.useful-links a:hover {
+    color: #a4ece4; 
+}
+
+.copyright{
+    text-align: center;
+}
+
+/*Fin pie de pagina*/
